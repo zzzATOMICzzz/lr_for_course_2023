@@ -14,7 +14,7 @@ def my_func_one(x, y):
 
 
 a = int(input("Enter a: "))
-b = int(input("Enter a: "))
+b = int(input("Enter b: "))
 print(my_func_one(a, b))
 
 '''
@@ -46,7 +46,7 @@ def my_func_three(x, y, z):
     print(sum(total))
 
 
-my_func_three(7, 2, 6)
+my_func_three(7, -2, 6)
 
 '''Программа принимает действительное положительное число x и целое отрицательное число y.
 Необходимо выполнить возведение числа x в степень y. Задание необходимо реализовать в виде функции my_func(x, y).
@@ -55,7 +55,6 @@ my_func_three(7, 2, 6)
 
 def my_func_four(x, y):
     return 1 / x ** abs(y)
-    # return x ** y
 
 
 print(my_func_four(2, -3))
@@ -99,8 +98,7 @@ while a is True:
 строки, но каждое слово должно начинаться с заглавной буквы.
 Необходимо использовать написанную ранее функцию int_func().
 '''
-def int_func_five(*args):
-    word = input("Input words ")
+def int_func_five():
+    word = input("Input words: ")
     print(word.title())
-    return
-int_func_five("wqe qweqwe qwe qwe qwe")
+int_func_five()
